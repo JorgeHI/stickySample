@@ -2,6 +2,7 @@
 Nuke command to save a RGB sample value on a stickyNote
 
 Autor: Jorge Hernandez
+
 Web: https://www.linkedin.com/in/jorgehi-vfx/
 
 ## Installation
