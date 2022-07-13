@@ -93,10 +93,10 @@ def sampleOnSticky():
     # Get the sample RGB values
     rgbSample = getSampleRGBValues(viewerNode, sampleNode)
 
-    labelText = f"{viewerNode.name()} - {sampleNode.name()}\n" \
-                f"R: {round(rgbSample[0], 5):.5f}\n" \
-                f"G: {round(rgbSample[1], 5):.5f}\n" \
-                f"B: {round(rgbSample[2], 5):.5f}"
+    labelText = f"<b>{viewerNode.name()} - {sampleNode.name()}</b>\n" \
+                f"<b style=\"color:red;\">R: {round(rgbSample[0], 5):.5f}</b>\n" \
+                f"<b style=\"color:green;\">G: {round(rgbSample[1], 5):.5f}</b>\n" \
+                f"<b style=\"color:blue;\">B: {round(rgbSample[2], 5):.5f}</b>"
     # Create the stickyNote
-    nuke.nodes.StickyNote(label=labelText, note_font_size=40, tile_color=35, note_font_color=15)
+    nuke.nodes.StickyNote(label=labelText, note_font_size=40, tile_color=35, note_font_color=15, note_font="arial")
 
