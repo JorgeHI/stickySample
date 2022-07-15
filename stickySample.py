@@ -74,7 +74,7 @@ def getSampleRGBValues(viewerNode, sampleNode):
     dx = int(sampledArea[2]-sampledArea[0])
     dy = int(sampledArea[3]-sampledArea[1])
 
-    red = sampleNode.sample("red", x+(dx/2), y+(dy/2), x, y)
+    red = sampleNode.sample("red", x+(dx/2), y+(dy/2), x+(dx), y+(dy))
     green = sampleNode.sample("green", x+(dx/2), y+(dy/2), x+(dx), y+(dy))
     blue = sampleNode.sample("blue", x+(dx/2), y+(dy/2), x+(dx), y+(dy))
 
